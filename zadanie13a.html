@@ -1,0 +1,37 @@
+<html>
+	<body>
+		<div style="color:blue;font-size:80px;">
+			<script language="JavaScript">
+			
+				var liczba1=prompt("c=","");
+				var liczba2=prompt("b=","");
+				
+				
+				var c_cie=parseFloat(liczba1);
+				var b_cie=parseFloat(liczba2);
+				
+				
+				document.write("c="+c_cie.toFixed(3)+" cm"+"<br>");
+				document.write("b="+b_cie.toFixed(3)+" cm"+"<br>");
+				
+				
+				a_cie=Math.sqrt(Math.pow(c_cie,2)-Math.pow(b_cie,2));
+				document.write("a="+a_cie.toFixed(3)+" cm"+"<br>");
+				
+				
+				sin_alfa_cie=b_cie/c_cie;
+				document.write("sin="+sin_alfa_cie.toFixed(3)+"<br>");
+				
+				
+				alfa_cie=Math.asin(b_cie/c_cie)*(180/Math.PI);
+				document.write("alfa="+alfa_cie.toFixed(3)+" st"+"<br>");
+				
+				
+				obw_cie=(a_cie+b_cie+c_cie);
+				document.write("Obwod="+obw_cie.toFixed(3)+" cm"+"<br>");
+				
+				
+			</script>
+		</div>
+	</body>
+</html>
